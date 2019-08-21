@@ -41,6 +41,13 @@ function qod_register_metaboxes() {
 		'id'   => $prefix . 'quote_source_url',
 		'type' => 'text_url',
 	) );
+
+	$quote_meta->add_field( array(
+		'name' => 'Email address',
+		'desc' => 'what is the persons email?',
+		'id'   => $prefix . 'dev_email_addresss',
+		'type' => 'text_email',
+	) );
 }
 
 add_action( 'cmb2_admin_init', 'qod_register_metaboxes' );
